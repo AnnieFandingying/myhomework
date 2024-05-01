@@ -1,0 +1,14 @@
+debug/enemy.o
+debug/health.o
+debug/main.o
+debug/mainwindow.o
+debug/musicpoint.o
+debug/qinjian.o
+debug/score.o
+debug/qrc_res.o
+debug/moc_enemy.o
+debug/moc_health.o
+debug/moc_mainwindow.o
+debug/moc_musicpoint.o
+debug/moc_qinjian.o
+debug/moc_score.o

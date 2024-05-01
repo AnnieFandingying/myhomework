@@ -1,0 +1,14 @@
+release/enemy.o
+release/health.o
+release/main.o
+release/mainwindow.o
+release/musicpoint.o
+release/qinjian.o
+release/score.o
+release/qrc_res.o
+release/moc_enemy.o
+release/moc_health.o
+release/moc_mainwindow.o
+release/moc_musicpoint.o
+release/moc_qinjian.o
+release/moc_score.o

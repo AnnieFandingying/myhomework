@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/black.jpg</file>
+        <file>res/blue.jpg</file>
+        <file>res/blueskystar.jpg</file>
+        <file>res/city.jpg</file>
+        <file>res/citysky.jpg</file>
+        <file>res/forest.jpg</file>
+        <file>res/musicpoint.jpg</file>
+        <file>res/nightfall.jpg</file>
+        <file>res/paintingriver.jpg</file>
+        <file>res/pink.jpg</file>
+        <file>res/pinkcar.jpg</file>
+        <file>res/pinktreeroad.jpg</file>
+        <file>res/sky.jpg</file>
+        <file>res/snowmountain.jpg</file>
+        <file>res/tubiao.ico</file>
+        <file>res/pianoplay.png</file>
+        <file>res/musicpoint1.png</file>
+        <file>res/musicpoint2.png</file>
+        <file>res/enemyviolin.png</file>
+    </qresource>
+</RCC>
