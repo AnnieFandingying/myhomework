@@ -8,6 +8,8 @@
 #include"qinjian.h"
 #include"score.h"
 #include"health.h"
+#include<QtMultimedia>
+#include<QSoundEffect>
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -35,5 +37,11 @@ int main(int argc, char *argv[])
     view.setFixedSize(690,388);
     view.setWindowTitle(TITLE);
     view.show();
+    //添加背景音乐
+    QMediaPlayer bgMusic;
+    QAudioOutput audioOutput;
+    bgMusic.setAudioOutput(&audioOutput);
+    bgMusic.setSource(QUrl("qrc:/res/Pianoboy - The Truth That You Leave.mp3"));
+    bgMusic.play();
     return a.exec();
 }

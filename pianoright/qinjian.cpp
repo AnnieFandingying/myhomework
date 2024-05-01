@@ -12,6 +12,7 @@
 using namespace change;
 qinjian::qinjian(QGraphicsItem *parent):QGraphicsPixmapItem(parent)
 {
+    pianoSound.setSource(QUrl(""));
     setPixmap(QPixmap(":/res/pianoplay.png"));
     setScale(0.2);//设置图标倍数
     setPos(WIDTH/2-boundingRect().width()*0.2/2,HEIGHT-boundingRect().height()*0.2);//设置在底部正中间

@@ -409,8 +409,10 @@ Makefile: ../../pianoright.pro E:/QTN/6.7.0/mingw_64/mkspecs/win32-g++/qmake.con
 		E:/QTN/6.7.0/mingw_64/mkspecs/features/yacc.prf \
 		E:/QTN/6.7.0/mingw_64/mkspecs/features/lex.prf \
 		../../pianoright.pro \
+		E:/QTN/6.7.0/mingw_64/lib/Qt6Multimedia.prl \
 		E:/QTN/6.7.0/mingw_64/lib/Qt6Widgets.prl \
 		E:/QTN/6.7.0/mingw_64/lib/Qt6Gui.prl \
+		E:/QTN/6.7.0/mingw_64/lib/Qt6Network.prl \
 		E:/QTN/6.7.0/mingw_64/lib/Qt6Core.prl \
 		E:/QTN/6.7.0/mingw_64/lib/Qt6EntryPoint.prl \
 		E:/QTN/6.7.0/mingw_64/mkspecs/features/build_pass.prf \
@@ -755,8 +757,10 @@ E:/QTN/6.7.0/mingw_64/mkspecs/features/exceptions.prf:
 E:/QTN/6.7.0/mingw_64/mkspecs/features/yacc.prf:
 E:/QTN/6.7.0/mingw_64/mkspecs/features/lex.prf:
 ../../pianoright.pro:
+E:/QTN/6.7.0/mingw_64/lib/Qt6Multimedia.prl:
 E:/QTN/6.7.0/mingw_64/lib/Qt6Widgets.prl:
 E:/QTN/6.7.0/mingw_64/lib/Qt6Gui.prl:
+E:/QTN/6.7.0/mingw_64/lib/Qt6Network.prl:
 E:/QTN/6.7.0/mingw_64/lib/Qt6Core.prl:
 E:/QTN/6.7.0/mingw_64/lib/Qt6EntryPoint.prl:
 E:/QTN/6.7.0/mingw_64/mkspecs/features/build_pass.prf:

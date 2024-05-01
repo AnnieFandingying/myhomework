@@ -2,6 +2,7 @@
 #define QINJIAN_H
 #include <QGraphicsPixmapItem>
 #include <QObject>
+#include<QSoundEffect>
 class QGraphicsTextItem;
 class qinjian : public QObject,public QGraphicsPixmapItem
 {
@@ -20,6 +21,7 @@ protected:
     virtual void timerEvent(QTimerEvent *event) override;
 private:
     bool playing=true;
+    QSoundEffect pianoSound;
     QGraphicsTextItem* messageItem=nullptr;
 };
 
