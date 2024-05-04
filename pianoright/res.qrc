@@ -20,5 +20,10 @@
         <file>res/musicpoint2.png</file>
         <file>res/enemyviolin.png</file>
         <file>res/Pianoboy - The Truth That You Leave.mp3</file>
+        <file>res/blueskystar2.jpg</file>
+        <file>res/nightfall2.jpg</file>
+        <file>res/paintingriver2.jpg</file>
+        <file>res/jaycd - always with you.mp3</file>
+        <file>res/wind.mp3</file>
     </qresource>
 </RCC>

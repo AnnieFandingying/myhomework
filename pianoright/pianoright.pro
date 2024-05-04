@@ -9,21 +9,25 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    background.cpp \
     enemy.cpp \
     health.cpp \
     main.cpp \
     mainwindow.cpp \
     musicpoint.cpp \
     qinjian.cpp \
+    regis.cpp \
     score.cpp
 
 HEADERS += \
+    background.h \
     change.h \
     enemy.h \
     health.h \
     mainwindow.h \
     musicpoint.h \
     qinjian.h \
+    regis.h \
     score.h
 
 # Default rules for deployment.
@@ -34,7 +38,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 
 FORMS += \
-    mainwindow.ui
+    background.ui \
+    mainwindow.ui \
+    regis.ui
 
 RESOURCES += \
     res.qrc

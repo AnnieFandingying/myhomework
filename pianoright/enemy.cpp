@@ -8,6 +8,7 @@
 #include"musicpoint.h"
 #include"score.h"
 #include"health.h"
+
 using namespace change;
 enemy::enemy(QGraphicsItem *parent):QGraphicsPixmapItem(parent)
 {
