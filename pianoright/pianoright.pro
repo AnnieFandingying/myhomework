@@ -1,4 +1,5 @@
 QT       += core gui
+QT       += core gui multimedia
 QT       += multimedia
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -10,11 +11,13 @@ CONFIG += c++17
 
 SOURCES += \
     background.cpp \
+    chooseplay.cpp \
     enemy.cpp \
     health.cpp \
     main.cpp \
     mainwindow.cpp \
     musicpoint.cpp \
+    platform.cpp \
     qinjian.cpp \
     regis.cpp \
     score.cpp
@@ -22,10 +25,12 @@ SOURCES += \
 HEADERS += \
     background.h \
     change.h \
+    chooseplay.h \
     enemy.h \
     health.h \
     mainwindow.h \
     musicpoint.h \
+    platform.h \
     qinjian.h \
     regis.h \
     score.h
@@ -39,7 +44,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 FORMS += \
     background.ui \
+    chooseplay.ui \
     mainwindow.ui \
+    platform.ui \
     regis.ui
 
 RESOURCES += \

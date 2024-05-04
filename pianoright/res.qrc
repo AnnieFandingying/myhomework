@@ -25,5 +25,23 @@
         <file>res/paintingriver2.jpg</file>
         <file>res/jaycd - always with you.mp3</file>
         <file>res/wind.mp3</file>
+        <file>res/40-C  -s.wav</file>
+        <file>res/44-E  -.wav</file>
+        <file>res/48-G# -.wav</file>
+        <file>res/52-C    -.wav</file>
+        <file>res/56-E   -.wav</file>
+        <file>res/41-C# -.wav</file>
+        <file>res/42-D -.wav</file>
+        <file>res/43-D# -.wav</file>
+        <file>res/45-F   -.wav</file>
+        <file>res/47-G  -.wav</file>
+        <file>res/49-A  -.wav</file>
+        <file>res/50-A# -.wav</file>
+        <file>res/51-B    -.wav</file>
+        <file>res/53-C# -.wav</file>
+        <file>res/54-D   -.wav</file>
+        <file>res/55-D# -.wav</file>
+        <file>res/46-F# -.wav</file>
+        <file>res/p_46_fz4.mp3</file>
     </qresource>
 </RCC>

@@ -23,53 +23,34 @@ public:
     QLabel *label;
     QLabel *label_2;
     QLabel *label_3;
-    QLabel *label_4;
-    QLabel *label_5;
-    QLabel *label_6;
-    QPushButton *piano;
-    QPushButton *violin;
-    QPushButton *trumpet;
-    QPushButton *drum;
-    QPushButton *start;
+    QPushButton *youxi;
+    QPushButton *pushButton_2;
+    QPushButton *pushButton;
 
     void setupUi(QWidget *chooseplay)
     {
         if (chooseplay->objectName().isEmpty())
             chooseplay->setObjectName("chooseplay");
-        chooseplay->resize(400, 300);
+        chooseplay->resize(399, 319);
         label = new QLabel(chooseplay);
         label->setObjectName("label");
-        label->setGeometry(QRect(20, 30, 61, 16));
+        label->setGeometry(QRect(140, 30, 271, 71));
         label_2 = new QLabel(chooseplay);
         label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(90, 10, 54, 16));
+        label_2->setGeometry(QRect(70, 100, 101, 61));
         label_3 = new QLabel(chooseplay);
         label_3->setObjectName("label_3");
-        label_3->setGeometry(QRect(80, 10, 54, 16));
-        label_4 = new QLabel(chooseplay);
-        label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(83, 30, 51, 20));
-        label_5 = new QLabel(chooseplay);
-        label_5->setObjectName("label_5");
-        label_5->setGeometry(QRect(80, 60, 54, 16));
-        label_6 = new QLabel(chooseplay);
-        label_6->setObjectName("label_6");
-        label_6->setGeometry(QRect(80, 90, 54, 16));
-        piano = new QPushButton(chooseplay);
-        piano->setObjectName("piano");
-        piano->setGeometry(QRect(150, 10, 80, 24));
-        violin = new QPushButton(chooseplay);
-        violin->setObjectName("violin");
-        violin->setGeometry(QRect(150, 30, 80, 24));
-        trumpet = new QPushButton(chooseplay);
-        trumpet->setObjectName("trumpet");
-        trumpet->setGeometry(QRect(150, 60, 80, 24));
-        drum = new QPushButton(chooseplay);
-        drum->setObjectName("drum");
-        drum->setGeometry(QRect(150, 90, 80, 24));
-        start = new QPushButton(chooseplay);
-        start->setObjectName("start");
-        start->setGeometry(QRect(100, 250, 80, 24));
+        label_3->setGeometry(QRect(70, 170, 181, 61));
+        youxi = new QPushButton(chooseplay);
+        youxi->setObjectName("youxi");
+        youxi->setGeometry(QRect(230, 120, 91, 31));
+        youxi->setAutoDefault(true);
+        pushButton_2 = new QPushButton(chooseplay);
+        pushButton_2->setObjectName("pushButton_2");
+        pushButton_2->setGeometry(QRect(230, 190, 91, 31));
+        pushButton = new QPushButton(chooseplay);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(160, 250, 80, 24));
 
         retranslateUi(chooseplay);
 
@@ -79,17 +60,12 @@ public:
     void retranslateUi(QWidget *chooseplay)
     {
         chooseplay->setWindowTitle(QCoreApplication::translate("chooseplay", "Form", nullptr));
-        label->setText(QCoreApplication::translate("chooseplay", "\344\270\273\351\242\230", nullptr));
-        label_2->setText(QString());
-        label_3->setText(QCoreApplication::translate("chooseplay", "\345\220\211\344\273\226", nullptr));
-        label_4->setText(QCoreApplication::translate("chooseplay", "\345\260\217\346\217\220\347\220\264", nullptr));
-        label_5->setText(QCoreApplication::translate("chooseplay", "\345\260\217\345\217\267", nullptr));
-        label_6->setText(QCoreApplication::translate("chooseplay", "\351\274\223", nullptr));
-        piano->setText(QCoreApplication::translate("chooseplay", "\351\200\211\346\213\251", nullptr));
-        violin->setText(QCoreApplication::translate("chooseplay", "\351\200\211\346\213\251", nullptr));
-        trumpet->setText(QCoreApplication::translate("chooseplay", "\351\200\211\346\213\251", nullptr));
-        drum->setText(QCoreApplication::translate("chooseplay", "\351\200\211\346\213\251", nullptr));
-        start->setText(QCoreApplication::translate("chooseplay", "\345\274\200\345\247\213\346\270\270\346\210\217", nullptr));
+        label->setText(QCoreApplication::translate("chooseplay", "<html><head/><body><p><span style=\" font-size:22pt;\">\350\257\267\351\200\211\346\213\251\346\250\241\345\274\217</span></p></body></html>", nullptr));
+        label_2->setText(QCoreApplication::translate("chooseplay", "<html><head/><body><p><span style=\" font-size:16pt; color:#aaaaff;\">\346\270\270\346\210\217\346\250\241\345\274\217</span></p></body></html>", nullptr));
+        label_3->setText(QCoreApplication::translate("chooseplay", "<html><head/><body><p><span style=\" font-size:16pt; color:#ffaaff;\">\351\222\242\347\220\264\346\250\241\345\274\217</span></p></body></html>", nullptr));
+        youxi->setText(QCoreApplication::translate("chooseplay", "\351\200\211\346\213\251", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("chooseplay", "\351\200\211\346\213\251", nullptr));
+        pushButton->setText(QCoreApplication::translate("chooseplay", "\350\277\224\345\233\236", nullptr));
     } // retranslateUi
 
 };

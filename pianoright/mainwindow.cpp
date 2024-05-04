@@ -16,6 +16,7 @@
 #include<QtMultimedia>
 #include<QSoundEffect>
 #include "background.h"
+#include "chooseplay.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -62,9 +63,12 @@ void MainWindow::on_checkBox_clicked(bool checked)
 //跳转主界面
 void MainWindow::on_btn_login_clicked()
 {
-    background* w=new background;
-    w->show();
+    chooseplay* v=new chooseplay;
+    v->show();
     this->hide();
+    /*background* w=new background;
+    w->show();
+    this->hide();*/
     /*qinjian* player=new qinjian;
     //QResource::registerResource("./piano.rcc");
 
