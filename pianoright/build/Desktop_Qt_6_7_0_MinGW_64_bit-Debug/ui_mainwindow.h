@@ -49,28 +49,30 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(314, 175);
+        MainWindow->resize(547, 323);
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/res/tubiao.ico"), QSize(), QIcon::Normal, QIcon::Off);
         icon.addFile(QString::fromUtf8(":/res/tubiao.ico"), QSize(), QIcon::Normal, QIcon::On);
         icon.addFile(QString::fromUtf8(":/res/tubiao.ico"), QSize(), QIcon::Disabled, QIcon::Off);
         MainWindow->setWindowIcon(icon);
-        MainWindow->setStyleSheet(QString::fromUtf8(""));
+        MainWindow->setStyleSheet(QString::fromUtf8("#MainWindow{\n"
+"	background-image: url(:/res/windbackground3.jpg);\n"
+"}"));
         MainWindow->setDockNestingEnabled(true);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         btn_login = new QPushButton(centralwidget);
         btn_login->setObjectName("btn_login");
-        btn_login->setGeometry(QRect(0, 80, 80, 24));
+        btn_login->setGeometry(QRect(20, 170, 80, 24));
         btn_regis = new QPushButton(centralwidget);
         btn_regis->setObjectName("btn_regis");
-        btn_regis->setGeometry(QRect(110, 80, 80, 24));
+        btn_regis->setGeometry(QRect(210, 170, 80, 24));
         but_quit = new QPushButton(centralwidget);
         but_quit->setObjectName("but_quit");
-        but_quit->setGeometry(QRect(210, 80, 80, 24));
+        but_quit->setGeometry(QRect(420, 170, 80, 24));
         horizontalLayoutWidget = new QWidget(centralwidget);
         horizontalLayoutWidget->setObjectName("horizontalLayoutWidget");
-        horizontalLayoutWidget->setGeometry(QRect(10, 0, 301, 31));
+        horizontalLayoutWidget->setGeometry(QRect(130, 30, 301, 31));
         horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
         horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -86,7 +88,7 @@ public:
 
         horizontalLayoutWidget_2 = new QWidget(centralwidget);
         horizontalLayoutWidget_2->setObjectName("horizontalLayoutWidget_2");
-        horizontalLayoutWidget_2->setGeometry(QRect(10, 30, 301, 31));
+        horizontalLayoutWidget_2->setGeometry(QRect(130, 90, 301, 31));
         horizontalLayout_2 = new QHBoxLayout(horizontalLayoutWidget_2);
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
@@ -108,7 +110,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 314, 21));
+        menubar->setGeometry(QRect(0, 0, 547, 21));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");

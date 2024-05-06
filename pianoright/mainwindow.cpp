@@ -63,6 +63,9 @@ void MainWindow::on_checkBox_clicked(bool checked)
 //跳转主界面
 void MainWindow::on_btn_login_clicked()
 {
+    QApplication::setWindowIcon(QIcon(":/res/tubiao.ico"));
+
+    //创建场景
     chooseplay* v=new chooseplay;
     v->show();
     this->hide();

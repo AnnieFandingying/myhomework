@@ -18,6 +18,7 @@
 //#include<QtKey>
 #include <QAbstractButton>
 #include "mainwindow.h"
+#include "introduction.h"
 platform::platform(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::platform)
@@ -278,5 +279,12 @@ void platform::on_pushButton_clicked()
     MainWindow *w=new MainWindow();
     w->show();
     this->hide();
+}
+
+
+void platform::on_pushButton_2_clicked()
+{
+    introduction *w=new introduction();
+    w->show();
 }
 

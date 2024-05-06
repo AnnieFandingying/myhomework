@@ -59,6 +59,7 @@ public:
     QPushButton *Button_Eb_2;
     QSpacerItem *horizontalSpacer_3;
     QPushButton *pushButton;
+    QPushButton *pushButton_2;
 
     void setupUi(QWidget *platform)
     {
@@ -419,6 +420,9 @@ public:
         pushButton = new QPushButton(platform);
         pushButton->setObjectName("pushButton");
         pushButton->setGeometry(QRect(10, 230, 71, 91));
+        pushButton_2 = new QPushButton(platform);
+        pushButton_2->setObjectName("pushButton_2");
+        pushButton_2->setGeometry(QRect(20, 30, 111, 61));
 
         retranslateUi(platform);
 
@@ -449,6 +453,7 @@ public:
         Button_C_4->setText(QCoreApplication::translate("platform", "C#", nullptr));
         Button_Eb_2->setText(QCoreApplication::translate("platform", "Eb", nullptr));
         pushButton->setText(QCoreApplication::translate("platform", "\350\277\224\345\233\236", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("platform", "\344\275\277\347\224\250\350\257\264\346\230\216", nullptr));
     } // retranslateUi
 
 };

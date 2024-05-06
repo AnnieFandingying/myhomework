@@ -36,12 +36,14 @@ public:
     QHBoxLayout *horizontalLayout_3;
     QLabel *label_3;
     QLineEdit *lineEdit_3;
+    QLabel *label_2;
 
     void setupUi(QWidget *regis)
     {
         if (regis->objectName().isEmpty())
             regis->setObjectName("regis");
-        regis->resize(400, 300);
+        regis->resize(526, 300);
+        regis->setStyleSheet(QString::fromUtf8(""));
         horizontalLayoutWidget = new QWidget(regis);
         horizontalLayoutWidget->setObjectName("horizontalLayoutWidget");
         horizontalLayoutWidget->setGeometry(QRect(110, 130, 301, 31));
@@ -96,6 +98,16 @@ public:
 
         horizontalLayout_3->addWidget(lineEdit_3);
 
+        label_2 = new QLabel(regis);
+        label_2->setObjectName("label_2");
+        label_2->setGeometry(QRect(3, 5, 521, 291));
+        label_2->setStyleSheet(QString::fromUtf8("background-image: url(:/res/winwind3.jpg);"));
+        label_2->raise();
+        horizontalLayoutWidget->raise();
+        btn_regis->raise();
+        horizontalLayoutWidget_2->raise();
+        btn_quit->raise();
+        horizontalLayoutWidget_3->raise();
 
         retranslateUi(regis);
 
@@ -110,6 +122,7 @@ public:
         label->setText(QCoreApplication::translate("regis", "\351\207\215\350\276\223\345\205\245", nullptr));
         btn_quit->setText(QCoreApplication::translate("regis", "\350\277\224\345\233\236", nullptr));
         label_3->setText(QCoreApplication::translate("regis", "\347\224\250\346\210\267\345\220\215", nullptr));
+        label_2->setText(QString());
     } // retranslateUi
 
 };

@@ -43,5 +43,22 @@
         <file>res/55-D# -.wav</file>
         <file>res/46-F# -.wav</file>
         <file>res/p_46_fz4.mp3</file>
+        <file>res/pinkcar3.jpg</file>
+        <file>res/drum.png</file>
+        <file>res/guitar.png</file>
+        <file>res/musicpoint.png</file>
+        <file>res/pianoicon.png</file>
+        <file>res/pianoqinjian2.jpg</file>
+        <file>res/trumpet.png</file>
+        <file>res/windbackground2.jpg</file>
+        <file>res/up.png</file>
+        <file>res/windbackground3.jpg</file>
+        <file>res/winwind3.jpg</file>
+        <file>res/citysky2.jpg</file>
+        <file>res/background2.jpg</file>
+        <file>res/background4.jpg</file>
+        <file>res/b3.png</file>
+        <file>res/c2.jpg</file>
+        <file>res/Kiss The Rain.mp3</file>
     </qresource>
 </RCC>

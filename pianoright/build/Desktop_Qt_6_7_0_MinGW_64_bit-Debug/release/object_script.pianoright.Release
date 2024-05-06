@@ -2,6 +2,7 @@ release/background.o
 release/chooseplay.o
 release/enemy.o
 release/health.o
+release/introduction.o
 release/main.o
 release/mainwindow.o
 release/musicpoint.o
@@ -14,6 +15,7 @@ release/moc_background.o
 release/moc_chooseplay.o
 release/moc_enemy.o
 release/moc_health.o
+release/moc_introduction.o
 release/moc_mainwindow.o
 release/moc_musicpoint.o
 release/moc_platform.o

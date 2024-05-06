@@ -3,6 +3,7 @@
 #include "background.h"
 #include "platform.h"
 #include "mainwindow.h"
+#include<QBitmap>
 chooseplay::chooseplay(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::chooseplay)

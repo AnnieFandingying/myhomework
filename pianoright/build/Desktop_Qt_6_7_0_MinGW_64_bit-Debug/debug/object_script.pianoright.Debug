@@ -2,6 +2,7 @@ debug/background.o
 debug/chooseplay.o
 debug/enemy.o
 debug/health.o
+debug/introduction.o
 debug/main.o
 debug/mainwindow.o
 debug/musicpoint.o
@@ -14,6 +15,7 @@ debug/moc_background.o
 debug/moc_chooseplay.o
 debug/moc_enemy.o
 debug/moc_health.o
+debug/moc_introduction.o
 debug/moc_mainwindow.o
 debug/moc_musicpoint.o
 debug/moc_platform.o

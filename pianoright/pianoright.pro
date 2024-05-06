@@ -14,6 +14,7 @@ SOURCES += \
     chooseplay.cpp \
     enemy.cpp \
     health.cpp \
+    introduction.cpp \
     main.cpp \
     mainwindow.cpp \
     musicpoint.cpp \
@@ -28,6 +29,7 @@ HEADERS += \
     chooseplay.h \
     enemy.h \
     health.h \
+    introduction.h \
     mainwindow.h \
     musicpoint.h \
     platform.h \
@@ -45,6 +47,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 FORMS += \
     background.ui \
     chooseplay.ui \
+    introduction.ui \
     mainwindow.ui \
     platform.ui \
     regis.ui

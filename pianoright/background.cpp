@@ -96,7 +96,7 @@ void background::on_nightfallsky_clicked()
     QMediaPlayer* bgMusic=new QMediaPlayer();
     QAudioOutput* audioOutput=new  QAudioOutput();
     bgMusic->setAudioOutput(*&audioOutput);
-    bgMusic->setSource(QUrl("qrc:/res/Pianoboy - The Truth That You Leave.mp3"));
+    bgMusic->setSource(QUrl("qrc:/res/Kiss The Rain.mp3"));
     bgMusic->play();
     this->close();
 }
