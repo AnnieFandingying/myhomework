@@ -21,6 +21,7 @@ protected:
     virtual void timerEvent(QTimerEvent *event) override;
 private:
     bool playing=true;
+    QSoundEffect pianosound;//击中时的音效
     QSoundEffect pianoSound;
     QGraphicsTextItem* messageItem=nullptr;
 };

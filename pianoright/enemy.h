@@ -11,7 +11,7 @@ public:
    enemy(QGraphicsItem *parent=nullptr);
     ~enemy()
    {
-        qDebug()<<"xigou";//当超出主屏范围及时析构
+        //qDebug()<<"xigou";//当超出主屏范围及时析构
     }
    // QObject interface
    protected:

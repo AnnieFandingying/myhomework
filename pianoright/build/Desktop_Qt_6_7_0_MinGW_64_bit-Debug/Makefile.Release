@@ -165,65 +165,72 @@ compiler_rcc_clean:
 	-$(DEL_FILE) release\qrc_res.cpp
 release/qrc_res.cpp: ../../res.qrc \
 		E:/QTN/6.7.0/mingw_64/bin/rcc.exe \
-		../../res/sky.jpg \
 		../../res/pianoplay.png \
 		../../res/45-F\ \ \ -.wav \
 		../../res/paintingriver2.jpg \
 		../../res/jaycd\ -\ always\ with\ you.mp3 \
-		../../res/56-E\ \ \ -.wav \
-		../../res/Pianoboy\ -\ The\ Truth\ That\ You\ Leave.mp3 \
 		../../res/musicpoint1.png \
 		../../res/tubiao.ico \
 		../../res/54-D\ \ \ -.wav \
 		../../res/pink.jpg \
-		../../res/pinktreeroad.jpg \
-		../../res/50-A\#\ -.wav \
 		../../res/p_46_fz4.mp3 \
 		../../res/citysky2.jpg \
-		../../res/background2.jpg \
-		../../res/Kiss\ The\ Rain.mp3 \
-		../../res/winwind3.jpg \
-		../../res/47-G\ \ -.wav \
-		../../res/musicpoint2.png \
 		../../res/black.jpg \
 		../../res/forest.jpg \
 		../../res/paintingriver.jpg \
 		../../res/44-E\ \ -.wav \
 		../../res/46-F\#\ -.wav \
-		../../res/49-A\ \ -.wav \
 		../../res/c2.jpg \
 		../../res/53-C\#\ -.wav \
+		../../res/p_43_dz4.mp3 \
 		../../res/guitar.png \
-		../../res/windbackground3.jpg \
 		../../res/blue.jpg \
 		../../res/41-C\#\ -.wav \
+		../../res/pianoicon.png \
+		../../res/48-G\#\ -.wav \
+		../../res/citysky.jpg \
+		../../res/42-D\ -.wav \
+		../../res/drum.png \
+		../../res/43-D\#\ -.wav \
+		../../res/trumpet.png \
+		../../res/up.png \
+		../../res/51-B\ \ \ \ -.wav \
+		../../res/pinkcar3.jpg \
+		../../res/p_50_az4.mp3 \
+		../../res/p_56_e5.mp3 \
+		../../res/p_53_cz5.mp3 \
+		../../res/sky.jpg \
+		../../res/p_41_cz4.mp3 \
+		../../res/56-E\ \ \ -.wav \
+		../../res/Pianoboy\ -\ The\ Truth\ That\ You\ Leave.mp3 \
+		../../res/pinktreeroad.jpg \
+		../../res/Kiss\ The\ Rain.mp3 \
+		../../res/50-A\#\ -.wav \
+		../../res/background2.jpg \
+		../../res/winwind3.jpg \
+		../../res/47-G\ \ -.wav \
+		../../res/musicpoint2.png \
+		../../res/49-A\ \ -.wav \
+		../../res/windbackground3.jpg \
 		../../res/blueskystar.jpg \
 		../../res/snowmountain.jpg \
 		../../res/background4.jpg \
+		../../res/p_55_dz5.mp3 \
 		../../res/pianoqinjian2.jpg \
 		../../res/b3.png \
 		../../res/musicpoint.png \
 		../../res/city.jpg \
 		../../res/enemyviolin.png \
-		../../res/pianoicon.png \
 		../../res/nightfall2.jpg \
-		../../res/citysky.jpg \
-		../../res/48-G\#\ -.wav \
-		../../res/42-D\ -.wav \
+		../../res/p_48_gz4.mp3 \
 		../../res/52-C\ \ \ \ -.wav \
-		../../res/43-D\#\ -.wav \
-		../../res/drum.png \
 		../../res/55-D\#\ -.wav \
 		../../res/pinkcar.jpg \
-		../../res/trumpet.png \
 		../../res/blueskystar2.jpg \
 		../../res/wind.mp3 \
 		../../res/40-C\ \ -s.wav \
-		../../res/up.png \
 		../../res/windbackground2.jpg \
 		../../res/musicpoint.jpg \
-		../../res/51-B\ \ \ \ -.wav \
-		../../res/pinkcar3.jpg \
 		../../res/nightfall.jpg
 	E:\QTN\6.7.0\mingw_64\bin\rcc.exe -name res --no-zstd ..\..\res.qrc -o release\qrc_res.cpp
 
@@ -2369,6 +2376,7 @@ release/background.o: ../../background.cpp ../../background.h \
 		E:/QTN/6.7.0/mingw_64/include/QtWidgets/QPushButton \
 		E:/QTN/6.7.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		E:/QTN/6.7.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		../../chooseplay.h \
 		E:/QTN/6.7.0/mingw_64/include/QtCore/QResource \
 		E:/QTN/6.7.0/mingw_64/include/QtCore/qresource.h \
 		E:/QTN/6.7.0/mingw_64/include/QtWidgets/QGraphicsView \
@@ -3629,20 +3637,6 @@ release/main.o: ../../main.cpp E:/QTN/6.7.0/mingw_64/include/QtCore/QResource \
 		E:/QTN/6.7.0/mingw_64/include/QtWidgets/qgraphicsscene.h \
 		E:/QTN/6.7.0/mingw_64/include/QtWidgets/QGraphicsScene \
 		E:/QTN/6.7.0/mingw_64/include/QtGui/QIcon \
-		../../change.h \
-		../../qinjian.h \
-		E:/QTN/6.7.0/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
-		E:/QTN/6.7.0/mingw_64/include/QtWidgets/qgraphicsitem.h \
-		E:/QTN/6.7.0/mingw_64/include/QtGui/qpainterpath.h \
-		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/QSoundEffect \
-		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qsoundeffect.h \
-		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
-		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
-		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
-		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qaudio.h \
-		../../score.h \
-		E:/QTN/6.7.0/mingw_64/include/QtWidgets/QGraphicsTextItem \
-		../../health.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/QtMultimedia \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/QtMultimediaDepends \
 		E:/QTN/6.7.0/mingw_64/include/QtCore/QtCore \
@@ -3834,6 +3828,7 @@ release/main.o: ../../main.cpp E:/QTN/6.7.0/mingw_64/include/QtCore/QResource \
 		E:/QTN/6.7.0/mingw_64/include/QtGui/QWindow \
 		E:/QTN/6.7.0/mingw_64/include/QtGui/QPaintDevice \
 		E:/QTN/6.7.0/mingw_64/include/QtGui/qpaintengine.h \
+		E:/QTN/6.7.0/mingw_64/include/QtGui/qpainterpath.h \
 		E:/QTN/6.7.0/mingw_64/include/QtGui/qpdfwriter.h \
 		E:/QTN/6.7.0/mingw_64/include/QtGui/qpicture.h \
 		E:/QTN/6.7.0/mingw_64/include/QtGui/qpixmapcache.h \
@@ -3920,6 +3915,10 @@ release/main.o: ../../main.cpp E:/QTN/6.7.0/mingw_64/include/QtCore/QResource \
 		E:/QTN/6.7.0/mingw_64/include/QtNetwork/QSslSocket \
 		E:/QTN/6.7.0/mingw_64/include/QtNetwork/qtnetworkversion.h \
 		E:/QTN/6.7.0/mingw_64/include/QtNetwork/qudpsocket.h \
+		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
+		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
+		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
+		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qaudio.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qaudiobuffer.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qtaudio.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qaudioformat.h \
@@ -3945,10 +3944,12 @@ release/main.o: ../../main.cpp E:/QTN/6.7.0/mingw_64/include/QtCore/QResource \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qmediarecorder.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qmediatimerange.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qscreencapture.h \
+		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qsoundeffect.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qtmultimediaversion.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qvideosink.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qwavedecoder.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qwindowcapture.h \
+		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/QSoundEffect \
 		../../mainwindow.h \
 		E:/QTN/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
 		E:/QTN/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
@@ -4188,20 +4189,6 @@ release/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		../../regis.h \
 		E:/QTN/6.7.0/mingw_64/include/QtCore/QResource \
 		E:/QTN/6.7.0/mingw_64/include/QtCore/qresource.h \
-		../../change.h \
-		../../qinjian.h \
-		E:/QTN/6.7.0/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
-		E:/QTN/6.7.0/mingw_64/include/QtWidgets/qgraphicsitem.h \
-		E:/QTN/6.7.0/mingw_64/include/QtGui/qpainterpath.h \
-		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/QSoundEffect \
-		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qsoundeffect.h \
-		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
-		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
-		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
-		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qaudio.h \
-		../../score.h \
-		E:/QTN/6.7.0/mingw_64/include/QtWidgets/QGraphicsTextItem \
-		../../health.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/QtMultimedia \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/QtMultimediaDepends \
 		E:/QTN/6.7.0/mingw_64/include/QtCore/QtCore \
@@ -4389,6 +4376,7 @@ release/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		E:/QTN/6.7.0/mingw_64/include/QtGui/QWindow \
 		E:/QTN/6.7.0/mingw_64/include/QtGui/QPaintDevice \
 		E:/QTN/6.7.0/mingw_64/include/QtGui/qpaintengine.h \
+		E:/QTN/6.7.0/mingw_64/include/QtGui/qpainterpath.h \
 		E:/QTN/6.7.0/mingw_64/include/QtGui/qpdfwriter.h \
 		E:/QTN/6.7.0/mingw_64/include/QtGui/qpixmapcache.h \
 		E:/QTN/6.7.0/mingw_64/include/QtGui/qrasterwindow.h \
@@ -4474,6 +4462,10 @@ release/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		E:/QTN/6.7.0/mingw_64/include/QtNetwork/QSslSocket \
 		E:/QTN/6.7.0/mingw_64/include/QtNetwork/qtnetworkversion.h \
 		E:/QTN/6.7.0/mingw_64/include/QtNetwork/qudpsocket.h \
+		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
+		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
+		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
+		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qaudio.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qaudiobuffer.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qtaudio.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qaudioformat.h \
@@ -4499,11 +4491,12 @@ release/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qmediarecorder.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qmediatimerange.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qscreencapture.h \
+		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qsoundeffect.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qtmultimediaversion.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qvideosink.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qwavedecoder.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qwindowcapture.h \
-		../../background.h \
+		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/QSoundEffect \
 		../../chooseplay.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o ..\..\mainwindow.cpp
 
@@ -5182,21 +5175,12 @@ release/platform.o: ../../platform.cpp ../../platform.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qvideosink.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qwavedecoder.h \
 		E:/QTN/6.7.0/mingw_64/include/QtMultimedia/qwindowcapture.h \
+		../../chooseplay.h \
 		E:/QTN/6.7.0/mingw_64/include/QtWidgets/QMessageBox \
 		E:/QTN/6.7.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		E:/QTN/6.7.0/mingw_64/include/QtWidgets/qdialog.h \
 		E:/QTN/6.7.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
 		E:/QTN/6.7.0/mingw_64/include/QtWidgets/QAbstractButton \
-		../../mainwindow.h \
-		E:/QTN/6.7.0/mingw_64/include/QtWidgets/QGraphicsView \
-		E:/QTN/6.7.0/mingw_64/include/QtWidgets/qgraphicsview.h \
-		E:/QTN/6.7.0/mingw_64/include/QtWidgets/qscrollarea.h \
-		E:/QTN/6.7.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
-		E:/QTN/6.7.0/mingw_64/include/QtWidgets/qgraphicsscene.h \
-		E:/QTN/6.7.0/mingw_64/include/QtWidgets/QGraphicsScene \
-		E:/QTN/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
-		E:/QTN/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
-		E:/QTN/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		../../introduction.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\platform.o ..\..\platform.cpp
 

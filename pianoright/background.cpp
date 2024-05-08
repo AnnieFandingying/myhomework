@@ -1,6 +1,6 @@
 #include "background.h"
 #include "ui_background.h"
-
+#include "chooseplay.h"
 #include<QResource>
 #include <QApplication>
 #include<QGraphicsView>
@@ -26,7 +26,7 @@ background::~background()
 
 void background::on_skyback_clicked()
 {
-    qinjian* player=new qinjian;
+    qinjian* player=new qinjian;//创建钢琴对象
     //QResource::registerResource("./piano.rcc");
 
     //创建图标
@@ -177,5 +177,13 @@ void background::on_blueskyback_clicked()
     bgMusic->setSource(QUrl("qrc:/res/wind.mp3"));
     bgMusic->play();
     this->close();
+}
+
+
+void background::on_pushButton_clicked()
+{
+    chooseplay* v=new chooseplay;
+    v->show();
+    this->hide();
 }
 

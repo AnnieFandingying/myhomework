@@ -60,5 +60,12 @@
         <file>res/b3.png</file>
         <file>res/c2.jpg</file>
         <file>res/Kiss The Rain.mp3</file>
+        <file>res/p_48_gz4.mp3</file>
+        <file>res/p_50_az4.mp3</file>
+        <file>res/p_53_cz5.mp3</file>
+        <file>res/p_56_e5.mp3</file>
+        <file>res/p_41_cz4.mp3</file>
+        <file>res/p_43_dz4.mp3</file>
+        <file>res/p_55_dz5.mp3</file>
     </qresource>
 </RCC>

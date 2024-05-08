@@ -9,10 +9,12 @@
 #include<QGraphicsTextItem>
 #include<QFontMetrics>//用于计算游戏结束文字大小
 #include"score.h"
+#include<QSoundEffect>
 using namespace change;
 qinjian::qinjian(QGraphicsItem *parent):QGraphicsPixmapItem(parent)
 {
-    pianoSound.setSource(QUrl(""));
+    //把钢琴在屏幕中绘制出来
+    pianoSound.setSource(QUrl("qrc:/res/p_48_gz4.mp3"));
     setPixmap(QPixmap(":/res/pianoplay.png"));
     setScale(0.2);//设置图标倍数
     setPos(WIDTH/2-boundingRect().width()*0.2/2,HEIGHT-boundingRect().height()*0.2);//设置在底部正中间
@@ -33,11 +35,11 @@ void qinjian::keyPressEvent(QKeyEvent *event)
     case Qt::Key_Right:
         if(pos().x()<WIDTH-boundingRect().width()*0.2)//控制右边移动范围，注意缩放比例
         {
-            setPos(x()+pianoMove,y());//钢琴左移速度
+            setPos(x()+pianoMove,y());//钢琴右移速度
         }
         break;
     case Qt::Key_Down:
-        if(pos().y()<HEIGHT-boundingRect().width()*0.2)//控制右边移动范围，注意缩放比例
+        if(pos().y()<HEIGHT-boundingRect().width()*0.2)//控制下边移动范围，注意缩放比例
         {
             setPos(x(),y()+pianoMove);//钢琴下移速度
         }
@@ -56,12 +58,12 @@ void qinjian::keyPressEvent(QKeyEvent *event)
         messageItem->hide();
     case Qt::Key_Space:
         {
-        MusicPoint* musicpointplay=new MusicPoint;
+        pianosound.play();//播放音效
+        MusicPoint* musicpointplay=new MusicPoint;//创建音符对象
         int temp=x()+boundingRect().width()*change::qinjianScale/2;//只考虑主钢琴宽度
         temp+=musicpointplay->boundingRect().width()*musicpointScale*1.5;//向右移动2个音符的宽度，将音符发射到中间
         musicpointplay->setPos(temp,y());
         scene()->addItem(musicpointplay);
-        //播放音效
         }
          break;
     }
@@ -72,7 +74,7 @@ void qinjian::enemySpawn()
 {
     if(playing)
     {
-        enemy *enemyplay=new enemy;
+        enemy *enemyplay=new enemy;//创建小提琴攻击对象
         scene()->addItem(enemyplay);
     }
 }

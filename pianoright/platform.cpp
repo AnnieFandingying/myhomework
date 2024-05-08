@@ -11,13 +11,12 @@
 #include <sys/stat.h>
 //#include <sys/ioctl.h>
 #include<QtMultimedia>
-
+#include "chooseplay.h"
 #include <fcntl.h>
 #include <qapplication.h>
 #include <QMessageBox>
 //#include<QtKey>
 #include <QAbstractButton>
-#include "mainwindow.h"
 #include "introduction.h"
 platform::platform(QWidget *parent)
     : QWidget(parent)
@@ -49,7 +48,7 @@ void platform::on_Button_C_2_clicked()
     QMediaPlayer* bgm=new QMediaPlayer;
     QAudioOutput* audioOutput=new QAudioOutput();
     bgm->setAudioOutput(*&audioOutput);
-    bgm->setSource(QUrl("qrc:/res/41-C# -.wav"));
+    bgm->setSource(QUrl("qrc:/res/p_41_cz4.mp3"));
     bgm->play();
 }
 
@@ -69,7 +68,7 @@ void platform::on_Button_Eb_clicked()
     QMediaPlayer* bgm=new QMediaPlayer;
     QAudioOutput* audioOutput=new QAudioOutput();
     bgm->setAudioOutput(*&audioOutput);
-    bgm->setSource(QUrl("qrc:/res/43-D# -.wav"));
+    bgm->setSource(QUrl("qrc:/res/p_43_dz4.mp3"));
     bgm->play();
 }
 
@@ -119,7 +118,7 @@ void platform::on_Button_G_2_clicked()
     QMediaPlayer* bgm=new QMediaPlayer;
     QAudioOutput* audioOutput=new QAudioOutput();
     bgm->setAudioOutput(*&audioOutput);
-    bgm->setSource(QUrl("qrc:/res/48-G# -.wav"));
+    bgm->setSource(QUrl("qrc:/res/p_48_gz4.mp3"));
     bgm->play();
 }
 
@@ -139,7 +138,7 @@ void platform::on_Button_Bb_clicked()
     QMediaPlayer* bgm=new QMediaPlayer;
     QAudioOutput* audioOutput=new QAudioOutput();
     bgm->setAudioOutput(*&audioOutput);
-    bgm->setSource(QUrl("qrc:/res/50-A# -.wav"));
+    bgm->setSource(QUrl("qrc:/res/p_50_az4.mp3"));
     bgm->play();
 }
 
@@ -170,7 +169,7 @@ void platform::on_Button_C_4_clicked()
     QMediaPlayer* bgm=new QMediaPlayer;
     QAudioOutput* audioOutput=new QAudioOutput();
     bgm->setAudioOutput(*&audioOutput);
-    bgm->setSource(QUrl("qrc:/res/53-C# -.wav"));
+    bgm->setSource(QUrl("qrc:/res/p_53_cz5.mp3"));
     bgm->play();
 }
 
@@ -190,7 +189,7 @@ void platform::on_Button_Eb_2_clicked()
     QMediaPlayer* bgm=new QMediaPlayer;
     QAudioOutput* audioOutput=new QAudioOutput();
     bgm->setAudioOutput(*&audioOutput);
-    bgm->setSource(QUrl("qrc:/res/55-D# -.wav"));
+    bgm->setSource(QUrl("qrc:/res/p_55_dz5.mp3"));
     bgm->play();
 }
 
@@ -276,8 +275,8 @@ void platform::keyReleaseEvent(QKeyEvent *event)
 
 void platform::on_pushButton_clicked()
 {
-    MainWindow *w=new MainWindow();
-    w->show();
+    chooseplay* v=new chooseplay;
+    v->show();
     this->hide();
 }
 
