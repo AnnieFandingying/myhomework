@@ -13,7 +13,6 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);
-    static bool c;//gai
     ~MainWindow();
 
 private slots:

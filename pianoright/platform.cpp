@@ -213,7 +213,7 @@ void platform::keyPressEvent(QKeyEvent *event)
 
         emit ui->Button_C->click();
         ui->Button_C->setStyleSheet("QPushButton{background-color: rgb(255, 255, 255);selection-color: rgb(255, 255, 255);padding-top: 60%;border-width:1px;border-style:solid;border-left-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0);}");
-
+break;
         /*QPoint pos;
                 pos = ui->Button_A->pos();
                 pos.setX( 20 + pos.x()+(ui->Button_A->width())/2 );
@@ -223,7 +223,7 @@ void platform::keyPressEvent(QKeyEvent *event)
                     pos,Qt::LeftButton,Qt::LeftButton,Qt::NoModifier);
                 QApplication::sendEvent(ui->Button_A,Press_event);*/
 
-        break;
+
     case Qt::Key_W:emit ui->Button_C_2->click();break;
     case Qt::Key_S:emit ui->Button_D->click();break;
     case Qt::Key_E:emit ui->Button_Eb->click();break;
@@ -241,6 +241,8 @@ void platform::keyPressEvent(QKeyEvent *event)
     case Qt::Key_P:emit ui->Button_Eb_2->click();break;
     case Qt::Key_Semicolon:emit ui->Button_E_2->click();break;
         break;
+
+
     }
 }
 

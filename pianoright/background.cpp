@@ -36,7 +36,7 @@ void background::on_skyback_clicked()
     QGraphicsScene* scene=new QGraphicsScene();//gai
     //将琴键添加到场景中
     scene->addItem(player);
-    scene->setSceneRect(0,0,690,388);
+    scene->setSceneRect(0,0,690,388);//
     scene->setBackgroundBrush(QBrush(QImage(":/res/sky.jpg")));
     //创建分数文字item
     scene->addItem(&Score::getInstanance());
@@ -44,17 +44,13 @@ void background::on_skyback_clicked()
     //创建分数文字item
     scene->addItem(&Health::getInstanance());
     //QGraphicsView view(scene);//gai
-    QGraphicsView* view=new QGraphicsView(scene);
-    /*view.setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);//（发现图片大小不合适）去掉滚轮条
-    view.setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    view.setFixedSize(690,388);
-    view.setWindowTitle(TITLE);*/
+    QGraphicsView* view=new QGraphicsView(scene);//绘制
     view->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);//（发现图片大小不合适）去掉滚轮条
     view->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    view->setFixedSize(690,388);
-    view->setWindowTitle(TITLE);
+    view->setFixedSize(690,388);//大小
+    view->setWindowTitle(TITLE);//名称
     view->show();
-    QMediaPlayer* bgMusic=new QMediaPlayer();
+    QMediaPlayer* bgMusic=new QMediaPlayer();//播放背景音乐
     QAudioOutput* audioOutput=new  QAudioOutput();
     bgMusic->setAudioOutput(*&audioOutput);
     bgMusic->setSource(QUrl("qrc:/res/Pianoboy - The Truth That You Leave.mp3"));
